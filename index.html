@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../formulario/style.css" />
+    <link rel="stylesheet" href="../formulario/fotos/fundo .jpg">
+    <title>formulario</title>
+</head>
+
+<body>
+
+    <h1>INSCRIÇAO DO VESTIBULA</h1>
+    <form class="formulario">
+
+        <div class="line">
+            <label for="input-name">Infome seu nome </label>
+            <input id="input-name" type="text" required placeholder="Ex: joao lucas." />
+
+        </div>
+        <div class="line">
+            <label for="input-email">Infome seu email </label>
+            <input id="input-email" type="email" required placeholder="email@email.com" />
+
+        </div>
+        <div class="line">
+            <label for="input-data">Infome seu ano de nascimento </label>
+            <input min="16" max="100" id="input-data" type="number" required placeholder=" Ex:08/03/2022" />
+
+        </div>
+        <div class="line">
+            <label for="input-cidade">selecione uma cidade </label>
+            <select name="selecao" id="input-cidade">
+                <option value="ba">Salvador</option>
+                <option value="ba">Lauro de freita</option>
+                <option value="ba">Camaçari</option>
+            </select>
+
+        </div>
+        <div class="line">
+            <label for="input-senha">Crie uma senha  </label>
+            <input minlength="8" maxlength="16" id="input-senha" required type="password" placeholder="***********" />
+        </div>
+        <div class="line">
+            <label for="input-fone">Infome seu telefone </label>
+            <input id="input-fone" type="tel" required placeholder=" Ex:(71)99999-9999" />
+        </div>
+        <div class="line">
+            <h2>Em qual periodo você deseja realiza a prova ?</h2>
+            <div>
+                <input type="radio" name="period" id="manha" value="manha">
+                <label for="manha">manha</label>
+            </div>
+            <div>
+                <input type="radio" name="period" id="manha" value="tarde">
+                <label for="tarde">tarde</label>
+            </div>
+            <div>
+                <input type="radio" name="period" id="noite" value="noite">
+                <label for="noite">noite</label>
+            </div>
+        </div>
+        <div class="line">
+            <h2>Em qual curso deseja ingressa ?</h2>
+            <div>
+                <input type="checkbox" id="Matematica" name="period">
+                <label for="Matematica">Matematica</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Ciencia da computação" name="period">
+                <label for="Ciencia da computação">Ciencia da computação</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Sistema da infomação" name="period">
+                <label for="Sistema da infomação">Sistema da infomação</label>
+            </div>
+        </div>
+
+
+        <input type="submit" class="botao" onclick="salva();" value="salva" />
+
+    </form>
+
+</body>
+
+<script type="text/javascript" src="./script.js"></script>
+
+</html>
